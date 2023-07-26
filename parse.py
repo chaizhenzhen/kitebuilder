@@ -631,17 +631,4 @@ def parse_specs(scrape_dir, output_file, top_paths, top_paths_md5, output_top,bl
 
     return len(output_contents)
 
-#
-# if __name__ == '__main__':
-#     #     scrape_dir = 'A:/google浏览器下载/kitebuilder-main/11111'
-#     #     output_file = 'A:/google浏览器下载/kitebuilder-main/11111/1.json'
-#     #     output_file2 = 'A:/google浏览器下载/kitebuilder-main/11111/2.json'
-#     #     blacklist = ['1.1.1.1']
-#     #     parse_specs(scrape_dir, output_file, output_file2, blacklist)
-#
-#     filename = 'A:/google浏览器下载/kitebuilder-main/11111/8_136_179_228_943_0 - 副本.json'
-#     filename2 = 'A:/google浏览器下载/kitebuilder-main/11111/8_136_179_228_943_0.json'
-#     filename3 = 'A:/google浏览器下载/kitebuilder-main/11111/54_215_35_21_8019_1.json'
-#     get_md5(filename)
 
-#     Count(filename)
