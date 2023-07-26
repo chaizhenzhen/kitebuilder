@@ -18,13 +18,16 @@ Kitebuilder is capable of parsing a large dataset of swagger files into our iter
 It also supplies a convert utility to parse other formats into a number of spec files.
 
 ```
-usage: kitebuilder.py parse [-h] [--blacklist HOSTS] [--scrape-dir DIR] [--output-file FILE]
+usage: kitebuilder.py parse [-h] [--blacklist HOSTS] [--scrape-dir DIR] [--output-file FILE] [--output-file2 FILE] [--output-file3 FILE] [--output-top FILE]
 
 optional arguments:
   -h, --help          show this help message and exit
   --blacklist HOSTS   Exclude specs with host field matching any of these strings (default googleapis, azure, petstore, amazon)
   --scrape-dir DIR    Directory to read list of specs from (default ./scrape)
   --output-file FILE  File to output resulting schema to (default output.json)
+  --output-file2 统计所有的swagger文件中的路径。
+  --output-file3 统计所有的swagger文件中的路径，统计之前，对swagger文件进行了去重操作。
+  --output-top 输出top1000的解析文件。
 ```
 
 ```
