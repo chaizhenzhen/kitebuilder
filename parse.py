@@ -359,6 +359,10 @@ def parse_swagger_spec(file_name, blacklist):
                     continue
 
                 description = endpoint_data.get("description", None)
+                if type(description) == dict:
+                    description=json.dumps(description)
+                    # if "$ref" in description.keys():
+                    #     description = description["$ref"]
                 if description is None:
                     description = endpoint_data.get("summary", "")
 
